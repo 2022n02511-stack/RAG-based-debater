@@ -1,0 +1,52 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environment
+.venv/
+venv/
+env/
+ENV/
+
+# Environment variables / secrets
+.env
+.env.*
+!.env.example
+
+# Uploaded files
+uploads/
+*.pdf
+
+# Generated audio
+static/audio/
+*.mp3
+*.wav
+*.webm
+
+# ChromaDB
+chroma_data/
+
+# Temporary files
+temp_audio.webm
+*.tmp
+*.temp
+
+# IDE / editors
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Python cache / tooling
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Socrates</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/css/style.css" />
+</head>
+<body>
+
+  <button id="theme-toggle" class="ascii-box theme-toggle" aria-label="Toggle light and dark mode">
+    [ theme: <span id="theme-label">dark</span> ]
+  </button>
+
+  <div class="frame">
+
+    <!-- Title -->
+    <header class="row title-row">
+      <h1>Socrates</h1>
+    </header>
+
+    <!-- Upload -->
+    <section class="row upload-row">
+      <button id="upload-box" class="ascii-box upload-box" type="button">
+        <span id="upload-label"># Upload PDF to get started.</span>
+      </button>
+      <input type="file" id="pdf-input" accept="application/pdf" hidden />
+    </section>
+
+    <!-- Column headers -->
+    <div class="columns-header row">
+      <div class="col-header left-col-header">
+        <span>{ Chat }</span>
+        <span class="dim"> - </span>
+        <span id="doc-name" class="dim"># no document loaded</span>
+      </div>
+      <div class="col-header right-col-header">
+        <span>{ Evidence Panel }</span>
+      </div>
+    </div>
+
+    <!-- Main two-pane body -->
+    <div class="columns main-columns">
+
+      <div class="col chat-col">
+        <div id="messages" class="messages">
+          <p class="dim placeholder"># Nothing here yet. Ask something once a document is loaded.</p>
+        </div>
+
+        <form id="composer" class="composer-box">
+          <div class="composer-controls">
+            <select id="provider-select" class="ascii-select" aria-label="Choose provider">
+              <option value="mistral">mistral</option>
+              <option value="gemini">gemini</option>
+            </select>
+
+            <button type="button" id="mic-btn" class="ascii-btn" disabled aria-label="Record a voice question">
+              [ mic ]
+            </button>
+          </div>
+
+          <div class="composer-input-row">
+            <input
+              id="question-input"
+              type="text"
+              placeholder="type your question..."
+              autocomplete="off"
+              disabled
+            />
+            <button type="submit" id="send-btn" class="ascii-btn" disabled>
+              [ send ]
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <div class="col evidence-col">
+        <div id="evidence-list" class="evidence-list">
+          <p class="dim placeholder"># No sources yet.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="/static/js/app.js"></script>
+</body>
+</html>
