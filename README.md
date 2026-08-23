@@ -80,26 +80,26 @@ Current capabilities:
                                   │
                                   ▼
                        ┌─────────────────────┐
-                       │  Similarity Search   │
-                       │      ChromaDB        │
-                       │  + Distance Filter   │
+                       │  Similarity Search  │
+                       │      ChromaDB       │
+                       │  + Distance Filter  │
                        └──────────┬──────────┘
                                   │
                                   ▼
                        ┌─────────────────────┐
-                       │     RAG Prompt       │
-                       │                      │
-                       │  Context + Question  │
-                       │   + Conversation     │
+                       │     RAG Prompt      │
+                       │                     │
+                       │  Context + Question │
+                       │   + Conversation    │
                        └──────────┬──────────┘
                                   │
                                   ▼
                  ┌────────────────────────────────┐
-                 │          LLM Provider           │
-                 │        (common interface)       │
-                 │     ┌────────┐   ┌────────┐     │
-                 │     │Mistral │   │ Gemini │     │
-                 │     └────────┘   └────────┘     │
+                 │          LLM Provider          │
+                 │        (common interface)      │
+                 │     ┌────────┐   ┌────────┐    │
+                 │     │Mistral │   │ Gemini │    │
+                 │     └────────┘   └────────┘    │
                  └───────────────┬────────────────┘
                                  │
                                  ▼
