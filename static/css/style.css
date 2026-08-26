@@ -2,8 +2,8 @@
 :root,
 html[data-theme="dark"] {
   --bg: #121316;
-  --line: #5c606b;             /* Prominent boundary lines */
-  --line-strong: #b5b8c2;      /* Sharp, clear focus lines */
+  --line: #5c606b;             
+  --line-strong: #b5b8c2;     
   --text: #f0f0f3;
   --text-dim: #a1a3ac;
   --accent: #7da2e2;
@@ -15,8 +15,8 @@ html[data-theme="dark"] {
 
 html[data-theme="light"] {
   --bg: #f4f4f2;
-  --line: #9498a3;             /* Prominent boundary lines */
-  --line-strong: #1a1b1e;      /* Sharp, clear focus lines */
+  --line: #9498a3;             
+  --line-strong: #1a1b1e;      
   --text: #121316;
   --text-dim: #4a4d55;
   --accent: #1a4380;
@@ -98,7 +98,7 @@ html[data-theme="light"] .ascii-select:hover:not(:disabled) {
   display: flex;
   flex-direction: column;
   min-height: 82vh;
-  overflow: hidden; /* Preserves rounded corners */
+  overflow: hidden; 
 }
 
 .row {
